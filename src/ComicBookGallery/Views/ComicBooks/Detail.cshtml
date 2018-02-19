@@ -14,17 +14,17 @@
             <h5><label>Issue #:</label> @Model.IssueNumber</h5>
             <h5><label>Favorite:</label> @(Model.Favorite ? "Yes" : "No")</h5>
             @if (Model.Artists.Length > 0)
-        {
-            <h5>Artists:</h5>
-            <div>
-                <ul>
-                    @foreach (var artist in Model.Artists)
-                {
-                    <li>@artist.Role: @artist.Name</li>
-            }
-                </ul>
-            </div>
-    }
+             {
+                <h5>Artists:</h5>
+                <div>
+                    <ul>
+                        @foreach (var artist in Model.Artists)
+                        {
+                            <li>@artist.Role: @artist.Name</li>
+                        }
+                    </ul>
+                </div>
+             }
         </div>
         <
         <h5>Description:</h5>
